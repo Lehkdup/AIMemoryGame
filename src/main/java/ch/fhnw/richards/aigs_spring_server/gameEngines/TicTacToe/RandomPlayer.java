@@ -14,5 +14,4 @@ public class RandomPlayer implements ttt_ai {
 			}
 		}
 	}
-	
 }
