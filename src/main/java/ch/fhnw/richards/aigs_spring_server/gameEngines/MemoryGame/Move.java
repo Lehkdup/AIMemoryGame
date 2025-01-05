@@ -1,4 +1,4 @@
-package ch.fhnw.richards.aigs_spring_server.gameEngines.TicTacToe;
+package ch.fhnw.richards.aigs_spring_server.gameEngines.MemoryGame;
 
 public class Move {
 	private long piece; // 1 is the player, -1 is the computer

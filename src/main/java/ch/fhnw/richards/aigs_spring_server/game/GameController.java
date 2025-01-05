@@ -69,8 +69,11 @@ public class GameController {
 				GameEngine ge = GameEngine.getGameEngine(game.getGameType());
 				if (ge != null) {
 					// Pass map, get back updated game (or null, if move was invalid)
+					//System.out.println("vor CONTROLLER aufruf");
+					game.setAiMove(1);
 					game = ge.move(game, map);
 					if (game != null) {
+						//System.out.println("vor CONTROLLER REPO SPEICHERN");
 						return repository.save(game);
 					} else {
 						throw new GameException("Invalid move");
